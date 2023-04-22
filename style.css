@@ -1,0 +1,23 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    margin: 0rem;
+    overflow: hidden; /*to hide the scroll bar*/ 
+}
+  
+#image-track > .image{
+    width: 40vmin; /* largeur de l'image*/
+    height: 56vmin; /* hauteur de l'image*/
+    object-fit: cover; /*pour que l'image prenne toute la place*/
+    object-position: center; /*pour centrer l'image*/
+}
+
+#image-track{
+    display: flex; /*tout sur une ligne*/
+    gap: 4vmin; /*espace entre les images*/
+    position: absolute; /*pour que l'image soit au centre de l'écran*/
+    top: 50%;
+    left: 50%;
+    transform: translate( 0%, -50% ); /* sera utile pour le JavaScript  */
+}
